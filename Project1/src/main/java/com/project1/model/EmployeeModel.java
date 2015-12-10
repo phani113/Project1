@@ -22,6 +22,11 @@ public class EmployeeModel {
 	public void setSal(int sal) {
 		this.sal = sal;
 	}
+	@Override
+	public String toString() {
+		return "EmployeeModel [id=" + id + ", name=" + name + ", sal=" + sal
+				+ "]";
+	}
 	
  
 }

@@ -36,6 +36,8 @@ public class Project1Controller
   {
 	  ServiceBean sb=(ServiceBean) context.getBean("sb");
 	  List<EmployeeModel> eModel=sb.getEmployee(dept.getDept_Name());
+	  log.info("Employee model list returned");
+	  log.debug(eModel.iterator().next());
 	  model.addAttribute("list", eModel);
 	  
 	  return "emp";
