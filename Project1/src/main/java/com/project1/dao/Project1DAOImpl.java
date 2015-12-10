@@ -5,7 +5,6 @@ import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-phani D
 import com.project1.domain.Employee;
 
 public class Project1DAOImpl implements Project1DAO {
