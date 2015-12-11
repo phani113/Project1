@@ -19,7 +19,7 @@ import com.project1.service.ServiceBean;
 
 
 @Controller
-public class Project1Controller
+public class Project1ControllerTest
 {  
 	Logger log=LogManager.getLogger(Project1Controller.class);
 	@Autowired
