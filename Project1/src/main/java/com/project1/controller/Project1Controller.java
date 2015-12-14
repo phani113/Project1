@@ -1,5 +1,6 @@
 package com.project1.controller;
 
+import java.util.LinkedList;
 import java.util.List;
 
 import org.apache.log4j.LogManager;
@@ -28,7 +29,7 @@ public class Project1Controller
   public String get(@ModelAttribute("department") DepartmentModel dept,Model model)
   {
 	 model.addAttribute(dept); 
-	 log.info("Home page returned");
+	log.debug("Home page returned");
 	 return "home";
   }
   @RequestMapping(value="/get.form",method=RequestMethod.POST)
@@ -36,9 +37,10 @@ public class Project1Controller
   {
 	  ServiceBean sb=(ServiceBean) context.getBean("sb");
 	  List<EmployeeModel> eModel=sb.getEmployee(dept.getDept_Name());
-	  log.info("Employee model list returned");
-	  log.debug(eModel.iterator().next());
+	//  log.info("Employee model list returned");
+	 log.debug(eModel.iterator().next());
 	  model.addAttribute("list", eModel);
+	  
 	  
 	  return "emp";
 	  
