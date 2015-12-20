@@ -10,10 +10,15 @@
   "Employee Not Found"
 </c:if>
 <c:if test="${list ne null}">
+<tr>
+<td>Name</td> &nbsp; 
+<td>Salary</td> <br>
+
+</tr>
 <core:forEach items="${list}" var="val">
 <tr>
-<td> Employee Name          : ${val.name} <br> </td>  
-<td> Employee Salary          : ${val.sal } <br> </td>
+<td> ${val.name}  </td>  &nbsp;&nbsp
+<td> ${val.sal } <br> </td>
 </tr><br>
 
 </core:forEach>
