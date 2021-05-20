@@ -39,7 +39,7 @@ public class Project1Controller
 	  // log.info(eModel.iterator().next());
 	  System.out.println("model : "+eModel);
 	  model.addAttribute("list", eModel);
-	  
+	  //TestCommit
 	  System.out.println("returning emp");
 	  return "emp";
 	  
